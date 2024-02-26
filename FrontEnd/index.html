@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD_Operations</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="/" class="logo">
+        <img src="../FrontEnd/assets/node-js.jpg" alt="logo" />
+      </a>
+
+      <div>
+        <a href="#home" class="active">Home</a>
+        <a href="/contact">Contact us</a>
+        <a href="/about">About us</a>
+      </div>
+    </header>
+
+    <!-- Add User Form  -->
+    <div class="user-form-container">
+      <h1>Add user</h1>
+
+      <form id="user-form" method="post">
+        <label for="name">Name</label>
+        <input
+          required
+          type="text"
+          id="name"
+          name="name"
+          placeholder="your name ..."
+        />
+
+        <label for="email">Email</label>
+        <input
+          required
+          type="email"
+          id="email"
+          name="email"
+          placeholder="your email ..."
+        />
+
+        <button class="create-user" id="submit">Create</button>
+      </form>
+    </div>
+    <!-- Table of all users -->
+
+    <div class="all-users">
+      <h2>All Users :</h2>
+      <table id="users">
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th></th>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>Developed by @ Ahmed A.Mohdy 2024</p>
+    </footer>
+
+    <!-- JS Codes -->
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
