@@ -3,7 +3,7 @@ function fetchUser() {
 }
 
 function deleteUser() {
-  console.log("***** deleteUser *****");
+  console.log("***** deleteUser **");
 }
 
 // Get users
